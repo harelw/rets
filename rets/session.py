@@ -509,7 +509,7 @@ class Session(object):
                 "automatically but it has not. Please instantiate the session with a version argument"
                 "to provide the version."
             )
-        version_number = self.version.strip("RETS/")
+        version_number = self.version
         user_str = "{0!s}:{1!s}".format(
             self.user_agent, self.user_agent_password
         ).encode("utf-8")
